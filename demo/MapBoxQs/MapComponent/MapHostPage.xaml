@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MapBoxQs.MapComponent.MapHostPage"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:mapComponent="clr-namespace:MapBoxQs.MapComponent;assembly=MapBoxQs"
+             Title="Assignment">
+  <ContentPage.Content>
+    <StackLayout>
+        <Button Text="Bind Map Viewmodel" Command="{Binding BindMapViewModelCommand}"/>
+        <mapComponent:Map Source="{Binding Map}"     
+                          VerticalOptions="FillAndExpand"
+                          HorizontalOptions="FillAndExpand"
+        />
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>
