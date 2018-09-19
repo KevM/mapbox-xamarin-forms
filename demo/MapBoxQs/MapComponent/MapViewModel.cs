@@ -6,11 +6,8 @@ namespace MapBoxQs.MapComponent
 {
     public class MapViewModel : INotifyPropertyChanged
     {
-        private readonly CoordinateBounds _initialBounds;
-
         public MapViewModel(CoordinateBounds initialBounds)
         {
-            _initialBounds = initialBounds;
             _centerLocation = initialBounds.CalculateCenter();
             _zoomLevel = initialBounds.CalculateZoomlevel();
         }

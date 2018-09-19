@@ -37,7 +37,16 @@ namespace MapBoxQs.MapComponent
 
         private MapViewModel _mapViewModel;
 
-        public ICommand BindMapViewModelCommand;
+        private ICommand _bindMapViewModelCommand;
+        public ICommand BindMapViewModelCommand
+        {
+            get => _bindMapViewModelCommand;
+            set
+            {
+                _bindMapViewModelCommand = value;
+                OnPropertyChanged("BindMapViewModelCommand");
+            }
+        }
 
         public MapViewModel Map
         {

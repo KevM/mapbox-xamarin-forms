@@ -7,7 +7,7 @@
   <forms:MapView 
     x:Name="naxamMap"
     ZoomLevel="{Binding ZoomLevel}"
-    Center="{Binding Center}"
+    Center="{Binding CenterLocation}"
     Annotations="{Binding Annotations}"
   >
   </forms:MapView>
